@@ -1,0 +1,1265 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+  <link href="https://fonts.googleapis.com/css?family=Bad+Script&amp;subset=cyrillic" rel="stylesheet">
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/style.css">
+  <title>CMD Engineering Solutions</title>
+  <meta content="" name="description">
+  <meta content="" name="keywords">
+
+  <!-- Favicons -->
+  <link href="assets/img/favicon.png" rel="icon">
+  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+
+  <!-- Vendor CSS Files -->
+  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
+  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+
+  <!-- Main CSS File -->
+  <link href="assets/css/style.css" rel="stylesheet">
+  <link href="assets/css/main.css" rel="stylesheet">
+
+  <link rel="stylesheet" href="assets/slider/animate.min.css">
+  <link rel="stylesheet" href="assets/slider/owl.carousel.min.css">
+  <link rel="stylesheet" href="assets/slider/owl.theme.default.css">
+  <link rel="stylesheet" href="assets/slider/slider.css">
+
+  <link rel="stylesheet" href="assets/css/responsive-master.css">
+
+  <!--Captcha-->
+  <script async defer src="https://www.google.com/recaptcha/api.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/prefixfree/1.0.7/prefixfree.min.js"></script>
+  <!--Captcha-->
+  <!-- loader -->
+
+  <script type="text/javascript">
+    $(document).ready(function () {
+      setTimeout(function () {
+        $(".loader-bg").fadeOut();
+      }, 500);
+    });
+
+  </script>
+  <script>
+    let loaders = document.getElementsByClassName('loader-bg');
+    setInterval(function () {
+      for (let loader of loaders) {
+        loader.classList.add("view-web");
+      }
+    }, 3000);
+  </script> <!-- loader -->
+
+  <style>
+    body {
+      background: #f9f9f9;
+      color: #333;
+    }
+
+    .scroll-indicator {
+      position: absolute;
+      left: 50%;
+      font-size: 50px;
+
+      -webkit-animation: bounce 1s infinite;
+      animation: bounce 1s infinite;
+    }
+
+    @-webkit-keyframes bounce {
+      0% {
+        top: 15%;
+      }
+
+      50% {
+        top: 20%;
+      }
+
+      100% {
+        top: 15%;
+      }
+    }
+
+    @keyframes bounce {
+      0% {
+        top: 15%;
+      }
+
+      50% {
+        top: 20%;
+      }
+
+      100% {
+        top: 15%;
+      }
+    }
+  </style>
+  <style>
+    /* Basic CSS for the chat box */
+    .chat-box {
+      width: 300px;
+      height: 400px;
+      border: 1px solid #ccc;
+      overflow-y: scroll;
+    }
+
+    .message {
+      padding: 10px;
+      margin: 5px;
+      border: 1px solid #ccc;
+      background-color: #f0f0f0;
+      border-radius: 5px;
+    }
+
+    /* CSS for the input area */
+    .input-area {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 10px;
+    }
+
+    .input-area input[type="text"] {
+      flex: 1;
+      padding: 5px;
+      border: 1px solid #ccc;
+      border-radius: 3px;
+    }
+
+    .input-area button {
+      margin-left: 10px;
+      padding: 5px 10px;
+      background-color: #007bff;
+      color: #fff;
+      border: none;
+      border-radius: 3px;
+      cursor: pointer;
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- ==========loader========== -->
+
+  <div class="loader-bg">
+    <div class="loader-p">
+      <img src="assets/img/logo.png" class="loder-img">
+    </div>
+  </div>
+  <!-- ==========loader========== -->
+
+  <!-- ======= Top Bar ======= -->
+  <section id="topbar" class="d-flex align-items-center">
+    <div class="container d-flex justify-content-center justify-content-md-between">
+      <div class="contact-info d-flex align-items-center">
+        <i class="bi bi-envelope d-flex align-items-center"><a
+            href="mailto:marketing@cmdengineering.in">marketing@cmdengineering.in</a></i>
+        <i class="bi bi-phone d-flex align-items-center ms-4"><a href="tel:9655517000">+91 96555 17000</a></i>
+      </div>
+      <div class="social-links d-none d-md-flex align-items-center">
+        <a href="https://www.facebook.com/profile.php?id=100091350890762" class="facebook"><i
+            class="bi bi-facebook"></i></a>
+        <a href="https://www.instagram.com/cmd_engineering_solutions/" class="instagram"><i
+            class="bi bi-instagram"></i></a>
+        <a href="https://pin.it/24GruYj" class="pinterest"><i class="bi bi-pinterest"></i></a>
+        <a href="https://www.youtube.com/channel/UCtLUmnrQTuS9Bjy1x54iroA" class="youtube"><i
+            class="bi bi-youtube"></i></a>
+        <a href="https://www.linkedin.com/company/cmdengineering/" class="linkedin"><i class="bi bi-linkedin"></i></a>
+        <a href="https://twitter.com/Cmd_engineering" class="twitter"><i class="bi bi-twitter"></i></a>
+        <a href="#" class="wikipedia"><i class="bx bxl-wikipedia"></i></a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ======= Header ======= -->
+  <header id="header" class="d-flex align-items-center">
+    <div class="container d-flex align-items-center justify-content-between">
+
+      <!-- Uncomment below if you prefer to use an image logo -->
+      <a href="index.html" class="logo"><img src="assets/img/logo.png" alt="CMD Engineering Solutions"></a>
+
+      <nav id="navbar" class="navbar">
+        <ul>
+          <li><a class="nav-link scrollto active" href="index.html">Home</a></li>
+
+          <li class="dropdown"><a href="#"><span>About Us</span> <i class="bi bi-chevron-down"></i></a>
+            <ul>
+              <li class="dropdown"><a href="company-history.html"><span>About Us</span> <i
+                    class="bi bi-chevron-down"></i></a>
+                <ul>
+                  <li> <a href="company-history.html"> Company History</a></li>
+                  <li> <a href="management-info.html"> management info</a>
+                  <li>
+                  <li> <a href="quality-policy.html"> quality policy</a>
+                  <li>
+                  <li> <a href="vision-and-mission.html"> vision & mission</a>
+                  <li>
+                  <li> <a href="achivement-awards.html "> achivement & awards</a>
+                  <li>
+                </ul>
+              </li>
+              <li class="dropdown"><a href="why-choose-us.html"><span> Why choose us?</span></a></li>
+            </ul>
+
+          </li>
+
+          <li class="dropdown"><a href="products.html"><span>Products</span> <i class="bi bi-chevron-down"></i></a>
+           <ul>
+              <li> <a href="products.html#checks-jaws"> Turning special Chucks & jaws</a></li>
+              <li> <a href="products.html#VMC-fixtures"> VMC Mechanical, Hydraulic & Pneumatic fixtures</a></li>
+              <li> <a href="products.html#HMC-spm"> HMC Mechanical, Hydraulic & Pneumatic fixtures</a></li>
+              <li> <a href="products.html#spm"> Special purpose machines</a></li>
+              <li> <a href="products.html#conveyor-automation"> Process With Semi Automation</a></li>
+              <li> <a href="products.html#robotic-automation"> Process automation with robotic types.</a></li>
+              <li> <a href="products.html#Gauge"> Special Gauge</a></li>
+              <li> <a href="products.html#Tool"> Special Tool</a></li>
+              <li> <a href="products.html#Programming"> Cam Programming</a></li>
+              <li> <a href="products.html#Prototye"> Prototye</a></li>
+              <li> <a href="products.html#Power"> Power Pack</a></li>
+            </ul>
+          </li>
+
+
+          <li class="dropdown"><a class="nav-link scrollto " href="services.html"><span>Services</span><i
+                class="bi bi-chevron-down"></i></a>
+            <ul>
+              <li> <a href="tooled-up.html#tool">Tooled Up</a></li>
+              <li><a href="prototype.html#prototype">Prototpye Engineering</a></li>
+              <li> <a href="application.html#application">Application Engineering</a></li>
+              <li> <a href="engineering.html#engineering">Engineering Services</a></li>
+              <li> <a href="automation.html#automation">Automation</a> </li>
+              <li> <a href="integration.html#integration">Integration Services</a> </li>
+            </ul>
+          </li>
+          <li><a class="nav-link scrollto" href="carrier.html">Career</a></li>
+
+
+          <li class="dropdown active"><a href="design-centre.html"><span>Infrastructure</span><i
+                class="bi bi-chevron-down"></i></a>
+            <ul>
+              <li> <a href="design-centre.html"> Design Centre</a></li>
+              <li> <a href="manufacturing-setup.html"> Manufacturing Setup</a></li>
+              <li> <a href="assembly-setup.html"> Assembly Setup</a></li>
+              <li> <a href="quality-control.html"> Quality Control</a></li>
+              <li> <a href="resourcing.html">SCM</a></li>
+            </ul>
+          </li>
+
+
+
+          <li><a class="nav-link scrollto" href="contact-us.html">Contact</a></li>
+        </ul>
+        <i class="bi bi-list mobile-nav-toggle"></i>
+      </nav><!-- .navbar -->
+
+    </div>
+  </header><!-- End Header -->
+
+
+  <main id="main">
+
+
+    <div class="cmd-home-slider-master home-bi">
+      <header>
+        <div id="slidermaster" class="owl-carousel owl-theme">
+
+          <div class="item">
+            <img src="assets/img/banner-home/CMD WB-02.jpg" class="img-fluid" alt="CMD Engineering Solutions">
+          </div>
+
+          <div class="item">
+            <img src="assets/img/banner-home/CMD WB-04.jpg" class="img-fluid" alt="CMD Engineering Solutions">
+          </div>
+
+          <div class="item">
+            <img src="assets/img/banner-home/CMD WB-03.jpg" class="img-fluid" alt="CMD Engineering Solutions">
+          </div>
+
+          <div class="item">
+            <img src="assets/img/banner-home/CMD WB-01.jpg" class="img-fluid" alt="CMD Engineering Solutions">
+          </div>
+
+
+
+        </div>
+      </header>
+    </div>
+
+
+
+
+    <!--
+    <br><br>
+    <div class="text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus totam earum laboriosam similique vel hic eius dolorem praesentium quisquam, qui doloremque blanditiis reprehenderit consectetur nisi id repellat dolor sapiente amet!</div>
+    <br><br>
+    -->
+
+
+    <!-- ======= About Section ======= -->
+    <section id="about" class="about-section01 section-bg" style="background-color: #f9f9f9;">
+      <div class="container" id="arrow">
+        <div class="row d-flex justify-content-center about-row-home01">
+          <div class="col-lg-6 col-md-3 col-sm-12 col-12 d-flex flex-column justify-content-center">
+            <div class="about-box01" data-aos="fade-up" data-aos-duration="1500">
+              <!-- <iframe width="560" controls height="560"
+                src="https://www.youtube.com/embed/90T3tXbyb9o?si=x-7wPC_YkbwvR6RE?autoplay=1" title="YouTube video player"
+                frameborder="0"></iframe> -->
+
+                <iframe href="https://www.youtube.com/embed/90T3tXbyb9o?si=x-7wPC_YkbwvR6RE?autoplay=1" data-videoid="lJIrF4YjHfQ" class="embedded-video-large" frameborder="0" allowfullscreen="" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" title="Embed videos and playlists" width="560" controls height="560" src="https://www.youtube.com/embed/90T3tXbyb9o?si=x-7wPC_YkbwvR6RE?&amp;cc_lang_pref=en&amp;cc_load_policy=1&amp;controls=2&amp;rel=0&amp;hl=en&amp;enablejsapi=1&amp;origin=https%3A%2F%2Fsupport.google.com&amp;widgetid=1" id="widget2" style="width: 560px height:560px"></iframe>
+            </div>
+          </div>
+          <div class="col-lg-6 col-md-9 col-sm-12 col-12 d-flex flex-column justify-content-center">
+            <div class="about-box02" data-aos="fade-right" data-aos-duration="2500">
+              
+              <p>
+                Established in 2017, CMD is a dynamic player in India's economic growth of sectors like <strong
+                  style="color: #027a8b;"> Power &
+                  Energy, Automobiles, Agriculture, Railways, General Engineering, Machine Tool, Defense, ISRO, Pump,
+                  valve and Marine/Aerospace etc...</strong> With a team led by seasoned experts, our promoters possess
+                over 15 years of invaluable experience in the design, manufacturing, assembly, testing and validation of
+                work holding fixtures. Our expertise spans the realms of hydraulic, pneumatic, and mechanical fixtures,
+                as well as specialized solutions like Special Purpose Machines (SPMs). Moreover, we excel in process
+                automation & robotic integration, offering specialized equipment’s to enhance efficiency and
+                productivity across industries. At CMD, our commitment to excellence is fueled by this rich experience,
+                driving us to deliver cutting-edge solutions that transform industries and contribute to India's
+                progress.
+              </p>
+            </div>
+
+
+            <div class="home-btn d-flex  justify-content-around">
+              <div class="cmd-btn-box">
+                <div id="first" class="cmd-buttonBox" data-aos="fade-left" data-aos-duration="1500">
+                  <a href="company-history.html" title="Click here to explore why choose us?" class="btn">about us</a>
+                  <div class="cmd-border"></div>
+                  <div class="cmd-border"></div>
+                </div>
+              </div>
+
+              <div class="cmd-btn-box">
+                <div id="first" class="cmd-buttonBox" data-aos="fade-left" data-aos-duration="1500">
+                  <a href="why-choose-us.html" title="Click here to explore why choose us?" class="btn">Why CMD ?</a>
+                  <div class="cmd-border"></div>
+                  <div class="cmd-border"></div>
+                </div>
+              </div>
+
+            </div>
+
+
+          </div>
+        </div>
+
+
+      </div>
+    </section> 
+    <!-- End About Section -->
+
+    <!-- ======= product Section ======= -->
+    <section id="product" class="product-section01 section-bg">
+      <div class="container-fluid">
+        <div class="row d-flex justify-content-center product-row01">
+          <div class="col-lg-3 col-md-3 col-sm-3 col-4">
+            <div class="product-box01 product01" data-aos="fade-left" data-aos-duration="1500">
+              <a href="products.html#checks-jaws" class="product-container">
+                <img src="assets/img/product/upl-chucks.jpg" class="img-fluid mx-auto d-flex image"
+                  alt="CMD Engineering Solutions">
+                <div class="middle">
+                  <div class="text">Own Product</div>
+                </div>
+              </a>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-3 col-sm-3 col-4">
+            <div class="product-box01 product02" data-aos="fade-up" data-aos-duration="1500">
+              <a href="products.html#fixtures" class="product-container">
+                <img src="assets/img/product/vmc-fixture03.jpg" class="img-fluid mx-auto d-flex image"
+                  alt="CMD Engineering Solutions">
+                <div class="middle">
+                  <div class="text">Work holding fixtures</div>
+                </div>
+              </a>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-3 col-sm-3 col-4">
+            <div class="product-box01 product01" data-aos="fade-right" data-aos-duration="1500">
+              <a href="products.html#other" class="product-container">
+                <img src="assets/img/product/others.jpg" class="img-fluid mx-auto d-flex image"
+                  alt="CMD Engineering Solutions">
+                <div class="middle">
+                  <div class="text">Prototype parts</div>
+                </div>
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="row d-flex justify-content-center product-row02">
+          <div class="col-lg-12 d-flex flex-column justify-content-center">
+            <div class="product-box01">
+              <a href="products.html">Our Products</a>
+            </div>
+          </div>
+        </div>
+        <div class="row d-flex justify-content-center product-row03">
+          <div class="col-lg-3 col-md-3 col-sm-3 col-4">
+            <div class="product-box01 product01" data-aos="fade-left" data-aos-duration="1500">
+              <a href="products.html#robotic-automation" class="product-container">
+                <img src="assets/img/product/automation04.jpg" class="img-fluid mx-auto d-flex image"
+                  alt="CMD Engineering Solutions">
+                <div class="middle">
+                  <div class="text">Process with semi automation</div>
+                </div>
+              </a>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-3 col-sm-3 col-4">
+            <div class="product-box01 product02" data-aos="fade-down" data-aos-duration="1500">
+              <a href="products.html#spm" class="product-container">
+                <img src="assets/img/services/special-purpose-machine02.jpg" class="img-fluid mx-auto d-flex image"
+                  alt="CMD Engineering Solutions">
+                <div class="middle">
+                  <div class="text">Special purpose machines</div>
+                </div>
+              </a>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-3 col-sm-3 col-4">
+            <div class="product-box01 product01" data-aos="fade-right" data-aos-duration="1500">
+              <a href="products.html#conveyor-automation01-01.jpg" class="product-container">
+                <img src="assets/img/product/automation01-01.jpg" class="img-fluid mx-auto d-flex image"
+                  alt="CMD Engineering Solutions">
+                <div class="middle">
+                  <div class="text">Process Integration With Robotics</div>
+                </div>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section> <!-- End product Section -->
+
+    <section class="cmd-home-services">
+      <div class="container-fluid">
+        <div class="row d-flex justify-content-center">
+          <div class="col-lg-2"></div>
+          <div class="col-lg-4 col-md-6 col-sm-12 col-12 d-flex flex-column ">
+            <div class="service-box01" data-aos="fade-down" data-aos-duration="1500">
+              <h2>CMD SERVICES</h2>
+            </div>
+            <!-- <div class="service-box001" data-aos="fade-right" data-aos-duration="1500">
+              <p><strong>Performance With New Perspectives</strong> <br>With sincerity and hard work of our
+                professionals, we have carved a niche for ourselves to provide solution in the domain of designing,
+                manufacturing & automation with robotic integration by offering a best service in the industry.</p>
+            </div> -->
+
+
+            <div class="service-box001" data-aos="fade-right" data-aos-duration="1500">
+              <p><strong>Major Activities Services</strong> <br></p>
+              <div class="abt-ul  ">
+                <ul class="cmd-serv">
+                  <li> Work holding fixtures for production centers </li>
+                  <li> Special tools</li>
+                  <li> Special Inspection gauges</li>
+                  <li> Component prove out</li>
+
+
+                  <li> Sample machining and process prove out </li>
+                  <li> Special purpose machine </li>
+                  <li> Cycle time reduction and process optimization</li>
+
+                  <li> Die and mould Manufacturing</li>
+                </ul>
+
+              </div>
+              </p>
+            </div>
+
+
+            <div class="cmd-btn-box">
+              <div id="first" class="cmd-buttonBox" data-aos="fade-left" data-aos-duration="1500">
+                <a href="services.html" class="btn">Explore Our Services</a>
+                <div class="cmd-border"></div>
+                <div class="cmd-border"></div>
+              </div>
+            </div>
+
+
+
+          </div>
+          <div class="col-lg-4 col-md-6 col-sm-12 md-center col-12">
+
+            <div id="service" class="owl-carousel owl-theme arrow">
+
+              <div class="item">
+                <div class="service-box03" data-aos="fade-up" data-aos-duration="1500">
+                  <a href="services.html">
+                    <img src="assets/img/new/slide/pump.jpg" class="img-fluid" alt="CMD Engineering Solutions">
+                    <h3 class="card-title">Pump</h3>
+                  </a>
+                </div>
+              </div>
+
+
+              <div class="item">
+                <div class="service-box03" data-aos="fade-up" data-aos-duration="1500">
+                  <a href="services.html" class="service-container">
+                    <img src="assets/img/new/slide/Valve.jpg" class="img-fluid mx-auto d-flex service-img"
+                      alt="CMD Engineering Solutions">
+                    <div class="bottom-text-overlay">
+
+                    </div>
+                    <h3 class="service-title">Valve</h3>
+                  </a>
+                </div>
+              </div>
+
+              <div class="item">
+                <div class="service-box03" data-aos="fade-down" data-aos-duration="1500">
+                  <a href="services.html">
+                    <img src="assets/img/new/slide/agriculture.jpg" class="img-fluid" alt="CMD Engineering Solutions">
+                    <h3 class="card-title">Agriculture</h3>
+                  </a>
+                </div>
+              </div>
+
+
+              <div class="item">
+                <div class="service-box03" data-aos="fade-down" data-aos-duration="1500">
+                  <a href="services.html">
+                    <img src="assets/img/new/slide/machine-tool.jpg" class="img-fluid" alt="CMD Engineering Solutions">
+                    <h3 class="card-title">Machine Tools</h3>
+                  </a>
+                </div>
+              </div>
+
+              <div class="item">
+                <div class="service-box03" data-aos="fade-up" data-aos-duration="1500">
+                  <a href="services.html">
+                    <img src="assets/img/new/slide/Defence.jpg" class="img-fluid" alt="CMD Engineering Solutions">
+                    <h3 class="card-title">Defence</h3>
+                  </a>
+                </div>
+              </div>
+
+              <div class="item">
+                <div class="service-box03" data-aos="fade-up" data-aos-duration="1500">
+                  <a href="services.html">
+                    <img src="assets/img/new/slide/Automobiles.jpg" class="img-fluid" alt="CMD Engineering Solutions">
+                    <h3 class="card-title">Automobiles</h3>
+                  </a>
+                </div>
+              </div>
+
+
+
+              <div class="item">
+                <div class="service-box03" data-aos="fade-up" data-aos-duration="1500">
+                  <a href="services.html">
+                    <img src="assets/img/new/slide/isro.jpg" class="img-fluid" alt="CMD Engineering Solutions">
+                    <h3 class="card-title">ISRO</h3>
+                  </a>
+                </div>
+              </div>
+
+
+              <div class="item">
+                <div class="service-box03" data-aos="fade-up" data-aos-duration="1500">
+                  <a href="services.html">
+                    <img src="assets/img/new/slide/power&energy.webp" class="img-fluid" alt="CMD Engineering Solutions">
+                    <h3 class="card-title">Power & Energy</h3>
+                  </a>
+                </div>
+              </div>
+
+
+              <div class="item">
+                <div class="service-box03" data-aos="fade-up" data-aos-duration="1500">
+                  <a href="services.html">
+                    <img src="assets/img/new/slide/aerospace.jpg" class="img-fluid" alt="CMD Engineering Solutions">
+                    <h3 class="card-title">Aerospace</h3>
+                  </a>
+                </div>
+              </div>
+
+
+              <div class="item">
+                <div class="service-box03" data-aos="fade-up" data-aos-duration="1500">
+                  <a href="services.html">
+                    <img src="assets/img/new/slide/railway.jpg" class="img-fluid" alt="CMD Engineering Solutions">
+                    <h3 class="card-title">Railways</h3>
+                  </a>
+                </div>
+              </div>
+
+
+              <div class="item">
+                <div class="service-box03" data-aos="fade-up" data-aos-duration="1500">
+                  <a href="services.html">
+                    <img src="assets/img/new/slide/general-engineering.jpg" class="img-fluid"
+                      alt="CMD Engineering Solutions">
+                    <h3 class="card-title">General Engineering</h3>
+                  </a>
+                </div>
+              </div>
+
+              <div class="item">
+                <div class="service-box03" data-aos="fade-up" data-aos-duration="1500">
+                  <a href="services.html">
+                    <img src="assets/img/new/slide/marine.jpg" class="img-fluid" alt="CMD Engineering Solutions">
+                    <h3 class="card-title">Marine</h3>
+                  </a>
+                </div>
+              </div>
+
+
+
+
+
+
+            </div>
+          </div>
+          <div class="col-lg-2"></div>
+        </div>
+
+
+
+      </div>
+    </section>
+
+
+
+
+
+    <section class="infrastructure-section">
+      <div class="container infrastructure-container">
+        <div class="row d-flex justify-content-center">
+          <div class="col-lg-12">
+            <div class="infra-box01" data-aos="fade-down" data-aos-duration="1500">
+              <h2>Infrastructure</h2>
+              <p>Since our establishment in 2017, CMD has invested significantly in creating a state-of-the-art
+                infrastructure that forms the backbone of our operations. Our facility is designed to meet the highest
+                industry standards and accommodate the diverse
+                needs of our clients. Here's a glimpse into our robust infrastructure</p>
+            </div>
+          </div>
+        </div>
+        <div class="row d-flex flex-wrap justify-content-center infrastructure-row02">
+          <div class="col-lg-2 col-md-4 col-sm-6 col-6">
+            <div class="infra-box02" data-aos="fade-right" data-aos-duration="1500">
+              <a href="design-centre.html">
+                <img src="assets/img/infrastructure/desing-home-01.jpg" class="img-fluid mx-auto d-flex">
+                <p>Design Centre</p>
+              </a>
+            </div>
+          </div>
+          <div class="col-lg-2 col-md-4 col-sm-6 col-6">
+            <div class="infra-box02" data-aos="fade-down" data-aos-duration="1500">
+              <a href="manufacturing-setup.html">
+                <img src="assets/img/infrastructure/manufacturing-setup.png" class="img-fluid mx-auto d-flex">
+                <p>Manufacturing Setup</p>
+              </a>
+            </div>
+          </div>
+          <div class="col-lg-2 col-md-4 col-sm-6 col-6">
+            <div class="infra-box02" data-aos="fade-up" data-aos-duration="1500">
+              <a href="assembly-setup.html">
+                <img src="assets/img/infrastructure/assembly-01.png" class="img-fluid mx-auto d-flex">
+                <p>Assembly Setup</p>
+              </a>
+            </div>
+          </div>
+          <div class="col-lg-2 col-md-4 col-sm-6 col-6">
+            <div class="infra-box02" data-aos="fade-down" data-aos-duration="1500">
+              <a href="quality-control.html">
+                <img src="assets/img/infrastructure/quality-control.png" class="img-fluid mx-auto d-flex">
+                <p>Quality Control</p>
+              </a>
+            </div>
+          </div>
+          <div class="col-lg-2 col-md-4 col-sm-6 col-6">
+            <div class="infra-box02" data-aos="fade-left" data-aos-duration="1500">
+              <a href="resourcing.html">
+                <img src="assets/img/infrastructure/sourcing.png" class="img-fluid mx-auto d-flex">
+                <p>SCM</p>
+              </a>
+            </div>
+          </div>
+        </div>
+
+
+
+      </div>
+      <div class="cmd-btn-box-home">
+        <div id="first" class="cmd-buttonBox" data-aos="fade-left" data-aos-duration="1500">
+          <a href="design-centre.html" class="btn">Explore Our Infrastructure</a>
+          <div class="cmd-border"></div>
+          <div class="cmd-border"></div>
+        </div>
+      </div>
+    </section>
+
+
+
+
+
+
+    <!--<section class="cmd-home-news-events">-->
+
+    <!--    <div class="container">  -->
+    <!--      <div class="cmd-testimonials">-->
+
+    <!--        <h2 data-aos="fade-down" data-aos-duration="1500"> News & <span>Blogs</span> </h2>-->
+
+    <!--        <div class="owl-carousel owl-carousel1 owl-theme">-->
+
+    <!--          <div data-aos="fade-right" data-aos-duration="1500">-->
+    <!--            <div class="card"><img class="card-img-top" src="assets/img/home/news-events01.jpg" alt="CMD Engineering Solutions">-->
+    <!--              <div class="card-body">-->
+    <!--                <h5>08-JUNE-2022-->
+    <!--                  <span> Company Name </span></h5>-->
+    <!--                <p class="card-text">“ Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil-->
+    <!--                  impedit quo minus id quod maxime placeat ” <a href="#!">read more</a> </p>-->
+    <!--              </div>-->
+    <!--            </div>-->
+    <!--          </div>-->
+
+    <!--          <div data-aos="fade-up" data-aos-duration="1500">-->
+    <!--            <div class="card"><img class="card-img-top" src="assets/img/home/news-events02.jpg" alt="CMD Engineering Solutions">-->
+    <!--              <div class="card-body">-->
+    <!--                <h5>08-JUNE-2022-->
+    <!--                  <span> Company Name </span></h5>-->
+    <!--                <p class="card-text">“ Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil-->
+    <!--                  impedit quo minus id quod maxime placeat ” <a href="#!">read more</a> </p>-->
+    <!--              </div>-->
+    <!--            </div>-->
+    <!--          </div>-->
+
+    <!--          <div data-aos="fade-left" data-aos-duration="1500">-->
+    <!--            <div class="card"><img class="card-img-top" src="assets/img/home/news-events03.jpg" alt="CMD Engineering Solutions">-->
+    <!--              <div class="card-body">-->
+    <!--                <h5>08-JUNE-2022-->
+    <!--                  <span> Company Name </span></h5>-->
+    <!--                <p class="card-text">“ Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil-->
+    <!--                  impedit quo minus id quod maxime placeat ” <a href="#!">read more</a> </p>-->
+    <!--              </div>-->
+    <!--            </div>-->
+    <!--          </div>-->
+
+    <!--          <div data-aos="fade-right" data-aos-duration="1500">-->
+    <!--            <div class="card"><img class="card-img-top" src="assets/img/home/news-events01.jpg" alt="CMD Engineering Solutions">-->
+    <!--              <div class="card-body">-->
+    <!--                <h5>08-JUNE-2022-->
+    <!--                  <span> Company Name </span></h5>-->
+    <!--                <p class="card-text">“ Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil-->
+    <!--                  impedit quo minus id quod maxime placeat ” <a href="#!">read more</a> </p>-->
+    <!--              </div>-->
+    <!--            </div>-->
+    <!--          </div>-->
+
+    <!--        </div>-->
+    <!--      </div>  -->
+    <!--    </div>-->
+
+    <!--</section>-->
+
+
+
+
+
+
+
+    <!-- <section class="cmd-home-testimonial">
+  
+    <div class="container">  
+      <div class="cmd-main-testimonials">
+        
+        <h2 data-aos="fade-down" data-aos-duration="1500"> testi<span>monial</span> </h2>
+        
+        <div class="owl-carousel owl-carousel2 owl-theme" data-aos="fade-up" data-aos-duration="1500">
+          
+          <div>
+            <div class="card">
+              <img class="card-img-top" src="assets/img/home/profile.png" alt="CMD Engineering Solutions">             
+              <div class="card-body">
+                <h5> Sam .N
+                  <span> <b>technical director</b> cmd engineering </span></h5>                
+                <p class="card-text">“ Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil
+                  impedit quo minus id quod maxime placeat ”</p>
+              </div>
+            </div>
+          </div>
+
+          <div>
+            <div class="card">
+              <img class="card-img-top" src="assets/img/home/profile.png" alt="CMD Engineering Solutions">             
+              <div class="card-body">     
+                <h5> Sam .N
+                  <span> <b>technical director</b> cmd engineering </span></h5>           
+                <p class="card-text">“ Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil
+                  impedit quo minus id quod maxime placeat ”</p>
+              </div>
+            </div>
+          </div>
+
+
+
+        </div>
+      </div>  
+    </div>
+
+</section>  -->
+
+
+
+  </main>
+
+  <!-- End #main -->
+
+  <!-- ======= Footer ======= -->
+  <footer id="footer">
+
+    <div class="footer-newsletter">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-lg-12 col-md-12" >
+            <h4>TIME & COSTING ENQUIRY</h4>
+            <form action="contact-save.php" method="post" class="php-email-form"
+              onsubmit="return contactvalidateForm(form2);">
+              <div class="row">
+
+                <div class="col-md-3">
+                  <input type="text" id="name" name="name" class="form-control" placeholder="Name *" required>
+                </div>
+
+                <div class="col-md-3">
+                  <input type="text" id="phone" name="phone" class="form-control" placeholder="Phone Number *" required>
+                </div>
+
+                <div class="col-md-3">
+                  <input type="text" id="email" name="email" class="form-control" placeholder="Email *" required>
+                </div>
+
+                <div class="col-md-3">
+                  <textarea rows="1" id="message" name="message" class="form-control" placeholder="Message *"
+                    required></textarea>
+                </div>
+                
+    
+              </div>
+              <center class="recaptcha1">
+                <div class="g-recaptcha" data-sitekey="6Lc8tmcgAAAAAFACGA8hcHPmEyGMSbUb6eJowVuj" data-form="form2">
+                </div>
+              </center>
+              
+             
+
+              <div class="text-center">
+                <button class="btn btn-primary">Submit Enquiry</button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="footer-top">
+      <div class="container">
+        <div class="row">
+
+          <div class="col-lg-3 col-md-6 footer-contact">
+            <img src="assets/img/home/footer-logo.png" class="img-fluid" alt="CMD Engineering Solutions">
+            <ul class="foot-logo-link">
+              <li><i class="bx bx-chevron-right"></i> <a href="Cookies-Policy.html">Cookies Policy</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="Privacy-Policy.html">Privacy Policy</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="Terms-&-Conditions.html">Terms & Conditions</a></li>
+            </ul>
+          </div>
+
+          <div class="col-lg-2 col-md-6 footer-links">
+            <h4>Quick Links</h4>
+            <ul>
+              <li><i class="bx bx-chevron-right"></i> <a href="index.html">Home</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="company-history.html">About us</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="products.html">Products</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="services.html">Services</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="design-centre.html">Infrastructure</a></li>
+
+
+              <li><i class="bx bx-chevron-right"></i> <a href="contact-us.html">Contact Us</a></li>
+            </ul>
+          </div>
+
+          <div class="col-lg-4 col-md-6 footer-links">
+            <h4>Contact info</h4>
+            <ul>
+              <span> <a href="#">
+                  <span> <i class="bi bi-geo-alt"></i> Head Office:</span>
+                  26, Gandhi Street, North, Veeriampalayam, Kalapatti, Coimbatore – 641 048 </a></span>
+              <li> <a href="#">
+                  <span> <i class="bi bi-geo-alt"></i>Factory:</span>
+                  5/285/C-10, Annur Main road, Thennampalayam, Arasur Village, Coimbatore – 641 407</a></li>
+
+              <li> <i class="bi bi-phone"></i> <a href="tel:9655517000">+91 99423 17656</a> </li>
+              <li> <i class="bi bi-phone"></i> <a href="tel:9942317656">+91 96555 17000</a></li>
+
+              <li> <i class="bi bi-envelope-fill"></i> <a
+                  href="mailto:marketing@cmdengineering.in">marketing@cmdengineering.in</a></li>
+            </ul>
+          </div>
+
+          <div class="col-lg-3 col-md-6 footer-links">
+            <h4>Find us on</h4>
+            <div class="social-links mt-3">
+              <a href="https://www.facebook.com/profile.php?id=100091350890762" class="facebook"><i
+                  class="bx bxl-facebook"></i></a>
+              <a href="https://www.instagram.com/cmd_engineering_solutions/" class="instagram"><i
+                  class="bx bxl-instagram"></i></a>
+              <a href="https://www.linkedin.com/company/cmdengineering/" class="linkedin"><i
+                  class="bx bxl-linkedin"></i></a>
+              <a href="https://pin.it/24GruYj" class="pinterest"><i class="bx bxl-pinterest"></i></a>
+              <a href="https://www.youtube.com/channel/UCtLUmnrQTuS9Bjy1x54iroA" class="youtube"><i
+                  class="bx bxl-youtube"></i></a>
+              <a href="https://twitter.com/Cmd_engineering" class="twitter"><i class="bx bxl-twitter"></i></a>
+              <a href="#" class="wikipedia"><i class="bx bxl-wikipedia"></i></a>
+
+            </div>
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d62655.18803733413!2d76.9814648157235!3d11.042431765337641!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ba857d3731d2731%3A0x6c8713e8689c7870!2sCMD%20Engineering%20Solutions!5e0!3m2!1sen!2sin!4v1694000470672!5m2!1sen!2sin"
+              width="100%" height="200" style="border:0;" allowfullscreen="" loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"></iframe>
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+  </footer> <!-- End Footer -->
+
+
+  <div class="last-footer">
+    <div class="container">
+      <div class="credits">
+        &copy; Copyright <strong><span>CMD</span></strong>. All Rights Reserved. Designed By Clouddreams <a
+          href="https://www.clouddreams.in/" target="_blank">Cloud Dreams.</a>
+      </div>
+    </div>
+  </div>
+
+  <div id="preloader"></div>
+  <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i
+      class="bi bi-arrow-up-short"></i></a>
+
+
+
+  <!-- Vendor JS Files -->
+  <script src="assets/vendor/purecounter/purecounter.js"></script>
+  <script src="assets/vendor/aos/aos.js"></script>
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+  <script src="assets/vendor/waypoints/noframework.waypoints.js"></script>
+
+
+  <!--  Main JS File -->
+  <script src="assets/js/main.js"></script>
+
+  <script src="assets/slider/jquery.min.js"></script>
+  <script src="assets/slider/owl.carousel.js"></script>
+
+  <script>
+    function contactvalidateForm(formId) {
+      var response = grecaptcha.getResponse(document.querySelector('[data-form="' + formId + '"]'));
+      if (response.length === 0) {
+        alert("Please Check Captcha");
+        return false;
+      } else {
+        return true;
+      }
+    }
+  </script>
+
+  <!-- Captacha -->
+  <script type="text/javascript" defer>
+    $recaptcha = $_POST['g-recaptcha-response'];
+    $res = reCaptcha($recaptcha);
+    if (!$res['success']) {
+      // Error
+    }
+
+    $siteKey = '6Lc8tmcgAAAAAFACGA8hcHPmEyGMSbUb6eJowVuj';
+    $secretKey = '6Lc8tmcgAAAAAA8V4_mM9BA6mWSOSmtopJdKOxEh'; 
+  </script>
+
+  <script type="text/javascript">
+    $('#slidermaster').owlCarousel({
+      loop: true,
+      margin: 10,
+      dots: true,
+      nav: true,
+      navText: ["<i class='bi bi-chevron-left'></i>", "<i class='bi bi-chevron-right'></i>"],
+      mouseDrag: false,
+      autoplay: true,
+      autoplayTimeout: 10000,
+      animateOut: 'slideOutUp',
+      responsive: {
+        0: {
+          items: 1
+        },
+        600: {
+          items: 1
+        },
+        1000: {
+          items: 1
+        }
+      }
+    });
+  </script>
+
+  <script type="text/javascript">
+    $('#service').owlCarousel({
+      loop: true,
+      margin: 10,
+      dots: false,
+      nav: true,
+      navText: ["<i class='bi bi-chevron-left'></i>", "<i class='bi bi-chevron-right'></i>"],
+      mouseDrag: false,
+      autoplay: true,
+      autoplayTimeout: 1500,
+
+      responsive: {
+        0: {
+          items: 1
+        },
+        600: {
+          items: 1
+        },
+        1000: {
+          items: 1
+        }
+      }
+    });
+  </script>
+
+
+  <script type="text/javascript">
+
+    (function () {
+      "use strict";
+
+      var carousels = function () {
+        $(".owl-carousel1").owlCarousel({
+          loop: true,
+          center: false,
+          margin: 0,
+          responsiveClass: true,
+          nav: true,
+          navText: ["<img src='assets/img/home/arrow01.png'>", "<img src='assets/img/home/arrow02.png'>"],
+          responsive: {
+            0: {
+              items: 1,
+              nav: false
+            },
+            680: {
+              items: 2,
+              nav: false,
+              loop: false
+            },
+            1000: {
+              items: 3,
+              nav: true
+            }
+          }
+        });
+      };
+
+      (function ($) {
+        carousels();
+      })(jQuery);
+    })();
+
+  </script>
+
+
+
+
+  <script type="text/javascript">
+
+    (function () {
+      "use strict";
+
+      var carousels = function () {
+        $(".owl-carousel2").owlCarousel({
+          loop: true,
+          center: false,
+          margin: 0,
+          responsiveClass: true,
+          nav: true,
+          navText: ["<img src='assets/img/home/arrow03.png'>", "<img src='assets/img/home/arrow04.png'>"],
+          responsive: {
+            0: {
+              items: 1,
+              nav: false
+            },
+            680: {
+              items: 1,
+              nav: false,
+              loop: false
+            },
+            1000: {
+              items: 1,
+              nav: true
+            }
+          }
+        });
+      };
+
+      (function ($) {
+        carousels();
+      })(jQuery);
+    })();
+
+  </script>
+  <script>// Select the element using document.querySelector
+    const element = document.querySelector(".ci-stage-chevron-1");
+
+    // Add an event listener for a click event
+    element.addEventListener("click", function () {
+      // Your click event code here
+      console.log("Element clicked!");
+    });</script>
+
+
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+      const links = document.querySelectorAll("a[href^='#']");
+
+      links.forEach((link) => {
+        link.addEventListener("click", function (e) {
+          e.preventDefault();
+          const targetId = this.getAttribute("href").substring(1);
+          const targetElement = document.getElementById(targetId);
+
+          if (targetElement) {
+            targetElement.scrollIntoView({
+              behavior: "smooth",
+            });
+          }
+        });
+      });
+    });
+  </script>
+  <script>
+    $(function () {
+      var INDEX = 0;
+      $("#chat-submit").click(function (e) {
+        e.preventDefault();
+        var msg = $("#chat-input").val();
+        if (msg.trim() == '') {
+          return false;
+        }
+        generate_message(msg, 'self');
+        var buttons = [
+          {
+            name: 'Existing User',
+            value: 'existing'
+          },
+          {
+            name: 'New User',
+            value: 'new'
+          }
+        ];
+        setTimeout(function () {
+          generate_message(msg, 'user');
+        }, 1000)
+
+      })
+
+      function generate_message(msg, type) {
+        INDEX++;
+        var str = "";
+        str += "<div id='cm-msg-" + INDEX + "' class=\"chat-msg " + type + "\">";
+        str += "          <span class=\"msg-avatar\">";
+        str += "            <img src=\"https:\/\/image.crisp.im\/avatar\/operator\/196af8cc-f6ad-4ef7-afd1-c45d5231387c\/240\/?1483361727745\">";
+        str += "          <\/span>";
+        str += "          <div class=\"cm-msg-text\">";
+        str += msg;
+        str += "          <\/div>";
+        str += "        <\/div>";
+        $(".chat-logs").append(str);
+        $("#cm-msg-" + INDEX).hide().fadeIn(300);
+        if (type == 'self') {
+          $("#chat-input").val('');
+        }
+        $(".chat-logs").stop().animate({ scrollTop: $(".chat-logs")[0].scrollHeight }, 1000);
+      }
+
+      function generate_button_message(msg, buttons) {
+        /* Buttons should be object array 
+          [
+            {
+              name: 'Existing User',
+              value: 'existing'
+            },
+            {
+              name: 'New User',
+              value: 'new'
+            }
+          ]
+        */
+        INDEX++;
+        var btn_obj = buttons.map(function (button) {
+          return "              <li class=\"button\"><a href=\"javascript:;\" class=\"btn btn-primary chat-btn\" chat-value=\"" + button.value + "\">" + button.name + "<\/a><\/li>";
+        }).join('');
+        var str = "";
+        str += "<div id='cm-msg-" + INDEX + "' class=\"chat-msg user\">";
+        str += "          <span class=\"msg-avatar\">";
+        str += "            <img src=\"https:\/\/image.crisp.im\/avatar\/operator\/196af8cc-f6ad-4ef7-afd1-c45d5231387c\/240\/?1483361727745\">";
+        str += "          <\/span>";
+        str += "          <div class=\"cm-msg-text\">";
+        str += msg;
+        str += "          <\/div>";
+        str += "          <div class=\"cm-msg-button\">";
+        str += "            <ul>";
+        str += btn_obj;
+        str += "            <\/ul>";
+        str += "          <\/div>";
+        str += "        <\/div>";
+        $(".chat-logs").append(str);
+        $("#cm-msg-" + INDEX).hide().fadeIn(300);
+        $(".chat-logs").stop().animate({ scrollTop: $(".chat-logs")[0].scrollHeight }, 1000);
+        $("#chat-input").attr("disabled", true);
+      }
+
+      $(document).delegate(".chat-btn", "click", function () {
+        var value = $(this).attr("chat-value");
+        var name = $(this).html();
+        $("#chat-input").attr("disabled", false);
+        generate_message(name, 'self');
+      })
+
+      $("#chat-circle").click(function () {
+        $("#chat-circle").toggle('scale');
+        $(".chat-box").toggle('scale');
+      })
+
+      $(".chat-box-toggle").click(function () {
+        $("#chat-circle").toggle('scale');
+        $(".chat-box").toggle('scale');
+      })
+
+    })
+  </script>
+</body>
+
+</html>
